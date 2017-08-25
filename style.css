@@ -1,4 +1,4 @@
-@-moz-document regexp('^https:\/\/www\.youtube\.com\/watch\?v=.{11}&index=\d+&list=WL$'), regexp('^https:\/\/www\.youtube\.com\/watch\?v=.{11}&list=WL&index=\d+$') {
+@-moz-document regexp("^http(s?):\\/\\/(www\\.)?youtube\\.com\\/watch\\?(v=.{11}&((list=WL&index=\\d+)|(index=\\d+&list=WL$)))&?") {
 	/* Видео HTML5 */video.video-stream.html5-main-video {
 		position: fixed;
 		border: 0px;
