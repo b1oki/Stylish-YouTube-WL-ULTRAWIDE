@@ -2,7 +2,9 @@
 
 Stylish https://userstyles.org/styles/147172/youtube-dark-wl-fhd
 
-For FullHD experience at YouTube "Watch List" playlist.
+For FullHD experience at YouTube "Watch Later" playlist.
+
+Watch Later: https://www.youtube.com/playlist?list=WL
 
 URL regexp examples, YouTube can change order of query:
 * `^http(s?):\/\/(www\.)?youtube\.com\/watch\?(v=.{11}&((list=WL&index=\d+)|(index=\d+&list=WL$)))&?`
