@@ -1,71 +1,19 @@
 @-moz-document regexp("^http(s?):\\/\\/(www\\.)?youtube\\.com\\/watch\\?(v=.{11}&((list=WL&index=\\d+)|(index=\\d+&list=WL$)))&?") {
-	/* Видео HTML5 */video.video-stream.html5-main-video {
-		position: fixed;
-		border: 0px;
-		width: 1570px !important;
-		height: 883px !important;
-	}
-	/* Контейнер видео */div#player-api {
-		left: -95px;
-		top: -5px;
-		width: 1570px;
-		height: 883px;
-		opacity: 1;
-	}
-	/* Управление */div.ytp-progress-bar-container {
-		height: 30px !important;
-	}
-	/* Плейлист */div#watch-appbar-playlist.watch-playlist {
-		position: absolute;
-		top: -15px;
-		left: 1480px;
-		width: 330px;
-		height: 893px;
-	}
-	/* Хозяин списка */div#player-playlist div.playlist-info,
-	/* Текст Посмотреть позже */div#player-playlist div.playlist-info h3.playlist-title a,
-	/* Заголовок видео в списке */div#player-playlist a.playlist-video h4 {
-		color: #888;
-	}
-	/* Удаление видео из списка */button.yt-uix-button-playlist-remove-item {
-		border: 1px outset #555;
-		background-color: #222;
-		width: 48px;
-		height: 48px !important;
-	}
-	/* Описание */div#watch7-content {
-		position: relative;
-		top: 153px;
-		left: -95px;
-		width: 1893px;
-	}
-	/* Описание текст */div#watch7-content * {
-		color: #888;
-		background-color: #333;
-	}
-	/* Описание горизонталь верхняя */div#watch8-action-buttons,
-	/* Описание горизонталь нижняя */div#action-panel-details button {
-		border-top: none;
-	}
-	/* Кнопка Подписаться */span#watch7-subscription-container * {
-		border: none;
-	}
-	/* Иконка YouTube */span#watch7-subscription-container .yt-uix-button-subscribe-branded:before {
-		display: none;
-	}
-	/* Кнопка "Показать ещё" в комментариях */div#watch-discussion button.load-more-button {
-		background-image: none;
-	}
-	 /* Шапка */div#masthead-positioner,
-	/* Шапка */div#masthead-positioner-height-offset,
-	/* Предлагаемые видео */div#watch7-sidebar-contents,
-	/* Подвал */div#footer-container {
-		display: none
-	}
-	div#body-container {
-		padding-bottom: 0;
-	}
-	body {
-		background-color: #222
+	@media
+		screen and (min-width: 2500px) and (max-width: 2560px) and (min-height: 950px) and (max-height: 1080px),
+		screen and (min-width: 3380px) and (max-width: 3440px) and (min-height: 1310px) and (max-height: 1440px)
+	{
+		body {
+			transform: scale(1.95);
+		}
+		div#masthead-container.ytd-app {
+			z-index: -10;
+		}
+		div#content.ytd-app {
+			margin-top: -80px;
+		}
+		div.header.style-scope.ytd-playlist-panel-renderer {
+			display: none;
+		}
 	}
 }
