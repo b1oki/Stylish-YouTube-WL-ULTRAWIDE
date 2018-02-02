@@ -3,8 +3,11 @@
 		screen and (min-width: 2500px) and (max-width: 2560px) and (min-height: 950px) and (max-height: 1080px),
 		screen and (min-width: 3380px) and (max-width: 3440px) and (min-height: 1310px) and (max-height: 1440px)
 	{
+		*, html {
+			font-size: 10pt !important;
+		}
 		body {
-			transform: scale(1.95);
+			zoom: 200%;
 		}
 		div#masthead-container.ytd-app {
 			z-index: -10;
@@ -12,7 +15,7 @@
 		div#content.ytd-app {
 			margin-top: -80px;
 		}
-		div.header.style-scope.ytd-playlist-panel-renderer {
+		div.header.ytd-playlist-panel-renderer {
 			display: none;
 		}
 	}
