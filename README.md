@@ -1,8 +1,8 @@
-# Stylish-YouTube-Dark-WL-FHD
+# Stylish-YouTube-WL-ULTRAWIDE
 
-Stylish https://userstyles.org/styles/147172/youtube-dark-wl-fhd
+Stylish https://userstyles.org/styles/147172/
 
-For FullHD experience at YouTube "Watch Later" playlist.
+For Ultra Wide experience at YouTube "Watch Later" playlist.
 
 Watch Later: https://www.youtube.com/playlist?list=WL
 
